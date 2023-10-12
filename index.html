@@ -91,6 +91,12 @@
                 <h4><strong>Code</strong></h4>
                 </a>
             </div>
+            <div class="col-md-2 text-center">
+                <a href="">
+                <image src="img/data.png" height="60px">
+                <h4><strong>Data</strong></h4>
+                </a>
+            </div>
         </div>
 
         <div class="col-md-12">
@@ -584,12 +590,21 @@ platforms).
 
         <div class="row justify-content-md-center mt-4">
             <div class="col-md-10 col-lg-8">
-                <h3>Effect of Planning on Task Completion</h3>
-                <p>We next analyze the effect of planning on the synthesis of long-horizon video plans. Below, we compare a generated video plan with no planning compared to extensive planning. Extensive planning is required for effective synthesis of long-horizon videos.</p>
+                <h3>Effect of Using Planning with VLMs and Video Models</h3>
+                <p>We next analyze the effect of combining VLM and video models together through planning to synthesize long-horizon video plans. 
+                Below, we first compare with directly generating a long horizon plan using a single task-conditioned video model. We next compare a generated video plan 
+                using VLM and video model with no planning. Finally, we compare with a generated plan with extensive planning. Extensive planning is required for effective synthesis of long-horizon videos.</p>
 
                 <div class="card mb-4 mt-4 text-dark bg-light">
                     <h5 class="card-header">Make a Line</h5>
                     <div class="card-body">
+                        <p>Generated Video Plan (Single Video Model):</p>
+                        <div class="col-md-12 mb-2">
+                            <video width="100%" preload="metadata" playsinline controls>
+                                <source src="videos/unipi.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
                         <p>Generated Video Plan (No Search):</p>
                         <div class="col-md-12 mb-2">
                             <video width="100%" preload="metadata" playsinline controls>
