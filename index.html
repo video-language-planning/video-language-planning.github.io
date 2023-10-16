@@ -144,7 +144,21 @@ platforms).
 
         <div class="row justify-content-md-center mt-4">
             <div class="col-md-10 col-lg-8">
-                <h3 id="results">Generated Video and Language Plans</h3>
+                <h3 id="results">Results</h3>
+                <p>Below we share additional qualitative results of Video Language Planning.
+                </p>
+
+
+                <p><a type="button" href="#genvideo" class="btn btn-primary">Generated Video and Language Plans</a></p>
+                <p> <a type="button" href="#vlm" class="btn btn-secondary">Effect of Using Planning with VLMs and Video Models</a></p>
+                <p> <a type="button" href="#real" class="btn btn-success">Real Executions</a></p>
+                <p><a type="button" href="#generalization" class="btn btn-info">Generalization</a></p>
+                <p><a type="button" href="#limitations" class="btn btn-warning">Limitations</a></p>
+            </div>
+        </div>
+        <div class="row justify-content-md-center mt-4">
+            <div class="col-md-10 col-lg-8">
+                <h3 id="genvideo">Generated Video and Language Plans</h3>
                 <p>Below are generated long-horizon language and video plans. Note that VLP is only given the first image and a single long-horizon language goal. All language subgoals and remaining frames in the video are <b>generated.</b></p>
 
                 <!--- Start of a block -->
@@ -615,7 +629,7 @@ platforms).
 
         <div class="row justify-content-md-center mt-4">
             <div class="col-md-10 col-lg-8">
-                <h3>Effect of Using Planning with VLMs and Video Models</h3>
+                <h3 id="vlm">Effect of Using Planning with VLMs and Video Models</h3>
                 <p>We next analyze the effect of combining VLM and video models together through planning to synthesize long-horizon video plans. 
                 Below, we first compare with directly generating a long horizon plan using a single task-conditioned video model. We next compare a generated video plan 
                 using VLM and video model with no planning. Finally, we compare with a generated plan with extensive planning. Extensive planning is required for effective synthesis of long-horizon videos.</p>
@@ -655,7 +669,7 @@ platforms).
 
         <div class="row justify-content-md-center mt-4">
             <div class="col-md-10 col-lg-8">
-                <h3>Real Executions</h3>
+                <h3 id="real">Real Executions</h3>
                 <p>Synthesized long horizon plans can be directly converted to policy execution using a goal-conditioned policy. We illustrate executions of different long-horizon tasks below. </p>
                 
                 <div class="card mb-4 mt-4 text-dark bg-light">
@@ -746,7 +760,7 @@ platforms).
 
         <div class="row justify-content-md-center mt-4">
             <div class="col-md-10 col-lg-8">
-                <h3>Generalization</h3>
+                <h3 id="generalization">Generalization</h3>
                 <p>VLP decouples action prediction into visual goal generation followed by goal-conditioned policy prediction. This abstraction enables VLP to different visual inputs -- the goal-conditioned policy simply to has to focus on the relevant visual parts of visual goal. </p>
 
 
@@ -815,7 +829,7 @@ platforms).
 
         <div class="row justify-content-md-center mt-4">
             <div class="col-md-10 col-lg-8">
-                <h3>Limitations</h3>
+                <h3 id="limitations">Limitations</h3>
                 <p>VLP is several limitations. First, the physics of objects may not be accurately preserved (as illustrated by several of the synthesized video plans above) and objects may suddenly disappear and appear. Furthermore, world knowledge may not be correctly transferred to new tasks. Below, we show a video plan where internet knowledge is inaccurately transferred. </p>
 
                 <div class="card mb-4 mt-4 text-dark bg-light">
