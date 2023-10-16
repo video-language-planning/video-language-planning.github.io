@@ -70,9 +70,9 @@
                 <li><a href="https://jonathantompson.github.io/">Jonathan Tompson</a></li>
                 <br>
                 <br>
-                    <a href="http://g.co/robotics">
-                        <image src="img/robotics-at-google.png" height="40px"> 
-                        Robotics at Google                        
+                    <a href="https://www.deepmind.com/">
+                        <image src="img/dm_logo.png" height="40px"> 
+                        Google DeepMind
                     </a>
                 </ul>
             </div>
@@ -97,12 +97,20 @@
                 <h4><strong>Data</strong></h4>
                 </a>
             </div>
+            <div class="col-md-2 text-center">
+                <a href="#results">
+                <image src="img/results.png" height="60px">
+                <h4><strong>Results</strong></h4>
+                </a>
+            </div>
         </div>
 
-        <div class="col-md-12">
-            <video id="v0" width="100%" preload="metadata" playsinline muted controls loop autoplay>
-                <source src="videos/tree_main.mp4" type="video/mp4">
-            </video>
+        <div class="row justify-content-md-center">
+            <div class="col-md-10 col-lg-8">
+                <video id="v0" width="100%" preload="metadata" playsinline muted controls loop autoplay>
+                    <source src="videos/tree_main.mp4" type="video/mp4">
+                </video>
+            </div>
         </div>
 
         <div class="row justify-content-md-center">
@@ -136,7 +144,7 @@ platforms).
 
         <div class="row justify-content-md-center mt-4">
             <div class="col-md-10 col-lg-8">
-                <h3>Generated Video and Language Plans</h3>
+                <h3 id="results">Generated Video and Language Plans</h3>
                 <p>Below are generated long-horizon language and video plans. Note that VLP is only given the first image and a single long-horizon language goal. All language subgoals and remaining frames in the video are <b>generated.</b></p>
 
                 <!--- Start of a block -->
@@ -178,10 +186,13 @@ platforms).
                         </select>
                         <br>
                         <p>Generated Video Plan:</p>
-                        <div class="col-md-12 mb-2">
-                            <video id="vid_linereal" width="100%" preload="metadata" playsinline controls>
-                                <source src="videos/linereal.mp4" type="video/mp4">
-                            </video>
+
+                        <div class="row justify-content-md-center mt-4">
+                            <div class="col-md-8 mb-2">
+                                <video id="vid_linereal" width="100%" preload="metadata" playsinline controls>
+                                    <source src="videos/linereal.mp4" type="video/mp4">
+                                </video>
+                            </div>
                         </div>
 
                         <div class="row">
@@ -251,10 +262,12 @@ platforms).
                         </select>
                         <br>
                         <p>Generated Video Plan:</p>
-                        <div class="col-md-12 mb-2">
-                            <video id="vid_linesim" width="100%" preload="metadata" playsinline controls>
-                                <source src="videos/linesim.mp4" type="video/mp4">
-                            </video>
+                        <div class="row justify-content-md-center mt-4">
+                            <div class="col-md-8 mb-2">
+                                <video id="vid_linesim" width="100%" preload="metadata" playsinline controls>
+                                    <source src="videos/linesim.mp4" type="video/mp4">
+                                </video>
+                            </div>
                         </div>
 
                         <div class="row">
@@ -298,10 +311,12 @@ platforms).
                         </select>
                         <br>
                         <p>Generated Video Plan:</p>
-                        <div class="col-md-12 mb-2">
+                        <div class="row justify-content-md-center mt-4">
+                            <div class="col-md-8 mb-2">
                             <video id="vid_pairreal" width="100%" preload="metadata" playsinline controls>
                                 <source src="videos/pairreal.mp4" type="video/mp4">
                             </video>
+                        </div>
                         </div>
 
                         <div class="row">
@@ -345,10 +360,12 @@ platforms).
                         </select>
                         <br>
                         <p>Generated Video Plan:</p>
-                        <div class="col-md-12 mb-2">
+                        <div class="row justify-content-md-center mt-4">
+                            <div class="col-md-8 mb-2">
                             <video id="vid_pairsim" width="100%" preload="metadata" playsinline controls>
                                 <source src="videos/pairsim.mp4" type="video/mp4">
                             </video>
+                        </div>
                         </div>
 
                         <div class="row">
@@ -404,10 +421,12 @@ platforms).
                         </select>
                         <br>
                         <p>Generated Video Plan:</p>
-                        <div class="col-md-12 mb-2">
+                        <div class="row justify-content-md-center mt-4">
+                            <div class="col-md-8 mb-2">
                             <video id="vid_areareal" width="100%" preload="metadata" playsinline controls>
                                 <source src="videos/areareal.mp4" type="video/mp4">
                             </video>
+                        </div>
                         </div>
 
                         <div class="row">
@@ -469,10 +488,12 @@ platforms).
                         </select>
                         <br>
                         <p>Generated Video Plan:</p>
-                        <div class="col-md-12 mb-2">
+                        <div class="row justify-content-md-center mt-4">
+                            <div class="col-md-8 mb-2">
                             <video id="vid_areasim" width="100%" preload="metadata" playsinline controls>
                                 <source src="videos/areasim.mp4" type="video/mp4">
                             </video>
+                        </div>
                         </div>
 
                         <div class="row">
@@ -505,10 +526,12 @@ platforms).
                         </select>
                         <br>
                         <p>Generated Video Plan:</p>
-                        <div class="col-md-12 mb-2">
+                        <div class="row justify-content-md-center mt-4">
+                            <div class="col-md-8 mb-2">
                             <video id="vid_fractal" width="100%" preload="metadata" playsinline controls>
                                 <source src="videos/fractal.mp4" type="video/mp4">
                             </video>
+                        </div>
                         </div>
 
                         <div class="row">
@@ -568,10 +591,12 @@ platforms).
                         </select>
                         <br>
                         <p>Generated Video Plan:</p>
-                        <div class="col-md-12 mb-2">
+                        <div class="row justify-content-md-center mt-4">
+                            <div class="col-md-8 mb-2">
                             <video id="vid_aloha" width="100%" preload="metadata" playsinline controls>
                                 <source src="videos/aloha.mp4" type="video/mp4">
                             </video>
+                        </div>
                         </div>
 
                         <div class="row">
@@ -598,27 +623,30 @@ platforms).
                 <div class="card mb-4 mt-4 text-dark bg-light">
                     <h5 class="card-header">Make a Line</h5>
                     <div class="card-body">
-                        <p>Generated Video Plan (Single Video Model):</p>
-                        <div class="col-md-12 mb-2">
-                            <video width="100%" preload="metadata" playsinline controls>
+                        <div class="row">
+                        <div class="col-md-4 mb-2">
+                        <p>Generated Video Plan</p> 
+                        <p>(Single Video Model):</p>
+                            <video width="100%" preload="metadata" playsinline controls loop muted autoplay>
                                 <source src="videos/unipi.mp4" type="video/mp4">
                             </video>
                         </div>
-
-                        <p>Generated Video Plan (No Search):</p>
-                        <div class="col-md-12 mb-2">
-                            <video width="100%" preload="metadata" playsinline controls>
+                        
+                        <div class="col-md-4 mb-2">
+                            <p>Generated Video Plan</p> <p> (No Search):</p>
+                            <video width="100%" preload="metadata" playsinline controls loop muted autoplay>
                                 <source src="videos/no_plan.mp4" type="video/mp4">
                             </video>
                         </div>
-
-                        <p>Generated Video Plan (Extensive Search):</p>
-                        <div class="col-md-12 mb-2">
-                            <video width="100%" preload="metadata" playsinline controls>
+                        
+                        <div class="col-md-4 mb-2">
+                            <p>Generated Video Plan</p> <p> (Extensive Search):</p>
+                            <video width="100%" preload="metadata" playsinline controls loop muted autoplay>
                                 <source src="videos/plan.mp4" type="video/mp4">
                             </video>
                         </div>
 
+                        </div>
                     </div>
                 </div>
 
@@ -633,23 +661,19 @@ platforms).
                 <div class="card mb-4 mt-4 text-dark bg-light">
                     <h5 class="card-header">Make a Line</h5>
                     <div class="card-body">
-                        <p>Video of Execution:</p>
-                        <div class="col-md-12 mb-2">
+                        <div class="row justify-content-md-center mt-4">
+                            <div class="col-md-6 mb-2">
+                            <p>Execution in Real:</p>
                             <video width="100%" preload="metadata" playsinline controls>
                                 <source src="videos/line_real_execution.mp4" type="video/mp4">
                             </video>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card mb-4 mt-4 text-dark bg-light">
-                    <h5 class="card-header">Make a Line</h5>
-                    <div class="card-body">
-                        <p>Video of Execution:</p>
-                        <div class="col-md-12 mb-2">
-                            <video width="100%" preload="metadata" playsinline controls>
-                                <source src="videos/line_sim_execution.mp4" type="video/mp4">
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <p>Execution in Sim:</p>
+                                <video width="100%" preload="metadata" playsinline controls>
+                                    <source src="videos/line_sim_execution.mp4" type="video/mp4">
                             </video>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -657,23 +681,19 @@ platforms).
                 <div class="card mb-4 mt-4 text-dark bg-light">
                     <h5 class="card-header">Group Blocks by Color</h5>
                     <div class="card-body">
-                        <p>Video of Execution:</p>
-                        <div class="col-md-12 mb-2">
+                        <div class="row justify-content-md-center mt-4">
+                            <div class="col-md-6 mb-2">
+                            <p>Execution in Real:</p>
                             <video width="100%" preload="metadata" playsinline controls>
                                 <source src="videos/pair_real_execution.mp4" type="video/mp4">
                             </video>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card mb-4 mt-4 text-dark bg-light">
-                    <h5 class="card-header">Group Blocks by Color</h5>
-                    <div class="card-body">
-                        <p>Video of Execution:</p>
-                        <div class="col-md-12 mb-2">
-                            <video width="100%" preload="metadata" playsinline controls>
-                                <source src="videos/group_sim_execution.mp4" type="video/mp4">
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <p>Execution in Sim:</p>
+                                <video width="100%" preload="metadata" playsinline controls>
+                                    <source src="videos/line_sim_execution.mp4" type="video/mp4">
                             </video>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -682,10 +702,12 @@ platforms).
                     <h5 class="card-header">Move Blocks to the Top Right Corner</h5>
                     <div class="card-body">
                         <p>Video of Execution:</p>
-                        <div class="col-md-12 mb-2">
+                        <div class="row justify-content-md-center mt-4">
+                            <div class="col-md-8 mb-2">
                             <video width="100%" preload="metadata" playsinline controls>
                                 <source src="videos/area_real_execution.mp4" type="video/mp4">
                             </video>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -694,10 +716,12 @@ platforms).
                     <h5 class="card-header">Move Blocks to the Bottom Left Corner</h5>
                     <div class="card-body">
                         <p>Video of Execution:</p>
-                        <div class="col-md-12 mb-2">
+                        <div class="row justify-content-md-center mt-4">
+                            <div class="col-md-8 mb-2">
                             <video width="100%" preload="metadata" playsinline controls>
                                 <source src="videos/area_sim_execution.mp4" type="video/mp4">
                             </video>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -706,10 +730,12 @@ platforms).
                     <h5 class="card-header">Put the Fruits into the Top Drawer</h5>
                     <div class="card-body">
                         <p>Video of Execution:</p>
-                        <div class="col-md-12 mb-2">
+                        <div class="row justify-content-md-center mt-4">
+                            <div class="col-md-8 mb-2">
                             <video width="100%" preload="metadata" playsinline controls>
                                 <source src="videos/fractal_execution.mp4" type="video/mp4">
                             </video>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -728,10 +754,12 @@ platforms).
                     <h5 class="card-header">Generalization to New Objects</h5>
                     <div class="card-body">
                         <p>VLP is able to execute the long-horizon task "move blocks to the top right corner" on three new objects (rubber donut, cupake and wooden yellow hexagon):</p>
-                        <div class="col-md-12 mb-2">
+                        <div class="row justify-content-md-center mt-4">
+                            <div class="col-md-8 mb-2">
                             <video width="100%" preload="metadata" playsinline controls>
                                 <source src="videos/object.mp4" type="video/mp4">
                             </video>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -741,10 +769,12 @@ platforms).
                     <h5 class="card-header">Generalization to New Lighting Conditions</h5>
                     <div class="card-body">
                         <p>VLP is able to execute the long-horizon task "move blocks to the bottom right corner" on a robot moved to a new office with substantially different lighting conditions (much more sunshine on the right side of the board):</p>
-                        <div class="col-md-12 mb-2">
+                        <div class="row justify-content-md-center mt-4">
+                            <div class="col-md-8 mb-2">
                             <video width="100%" preload="metadata" playsinline controls>
                                 <source src="videos/light.mp4" type="video/mp4">
                             </video>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -756,10 +786,12 @@ platforms).
                     <h5 class="card-header">Move Moose Toy Near Green Pear</h5>
                     <div class="card-body">
                         <p>VLP is able to execute the unseen task "move moose toy near green peer".</p>
-                        <div class="col-md-12 mb-2">
+                        <div class="row justify-content-md-center mt-4">
+                            <div class="col-md-8 mb-2">
                             <video width="100%" preload="metadata" playsinline controls>
                                 <source src="videos/moose.mp4" type="video/mp4">
                             </video>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -768,10 +800,12 @@ platforms).
                     <h5 class="card-header">Pick Snicker Energy Bar</h5>
                     <div class="card-body">
                         <p>VLP is able to execute the unseen task "pick snicker energy bar".</p>
-                        <div class="col-md-12 mb-2">
+                        <div class="row justify-content-md-center mt-4">
+                            <div class="col-md-8 mb-2">
                             <video width="100%" preload="metadata" playsinline controls>
                                 <source src="videos/snicker.mp4" type="video/mp4">
                             </video>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -788,10 +822,12 @@ platforms).
                     <h5 class="card-header">Pick up Octopus Toy</h5>
                     <div class="card-body">
                         <p>Generated Video Plan:</p>
-                        <div class="col-md-12 mb-2">
+                        <div class="row justify-content-md-center mt-4">
+                            <div class="col-md-8 mb-2">
                             <video width="100%" preload="metadata" playsinline controls>
                                 <source src="videos/octopus.mp4" type="video/mp4">
                             </video>
+                        </div>
                         </div>
                     </div>
                 </div>
