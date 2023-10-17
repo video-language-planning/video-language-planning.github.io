@@ -10,6 +10,27 @@
     <meta name="description" content="Video Language Planning">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
+     <!--FACEBOOK-->
+     <meta property="og:image" content="./img/share_image.png">
+     <meta property="og:image:type" content="image/png">
+     <meta property="og:image:width" content="1196">
+     <meta property="og:image:height" content="705">
+     <meta property="og:type" content="website" />
+     <meta property="og:url" content="https://video-language-planning.github.io/"/>
+     <meta property="og:title" content="Video Language Planning" />
+     <meta property="og:description"
+         content="Project page for Video Language Planning." />
+ 
+     <!--TWITTER-->
+     <meta name="twitter:card" content="summary_large_image" />
+     <meta name="twitter:title" content="Video Language Planning" />
+     <meta name="twitter:description"
+         content="Project page for Video Language Planning" />
+     <meta name="twitter:image" content="./img/share_image.png" />
+
+     
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
@@ -115,8 +136,8 @@
 
         <div class="row justify-content-md-center">
             <div class="col-md-10 col-lg-8">
-                <video id="v0" width="100%" preload="metadata" playsinline muted controls loop autoplay>
-                    <source src="videos/tree_main.mp4" type="video/mp4">
+                <video id="v0" width="100%" preload="metadata" playsinline muted onclick="setAttribute('controls', 'true');" loop autoplay>
+                    <source src="videos/vlp_teaser_comp.mp4" type="video/mp4">
                 </video>
             </div>
         </div>
@@ -838,7 +859,7 @@ platforms).
         <div class="row justify-content-md-center mt-4">
             <div class="col-md-10 col-lg-8">
                 <h3 id="limitations">Limitations</h3>
-                <p>VLP is several limitations. First, the physics of objects may not be accurately preserved (as illustrated by several of the synthesized video plans above) and objects may suddenly disappear and appear. Furthermore, world knowledge may not be correctly transferred to new tasks. Below, we show a video plan where internet knowledge is inaccurately transferred. </p>
+                <p>VLP has several limitations. First, the physics of objects may not be accurately preserved (as illustrated by several of the synthesized video plans above) and objects may suddenly disappear and appear. Furthermore, world knowledge may not be correctly transferred to new tasks. Below, we show a video plan where internet knowledge is inaccurately transferred. </p>
 
                 <div class="card mb-4 mt-4 text-dark bg-light">
                     <h5 class="card-header">Pick up Octopus Toy</h5>
