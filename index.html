@@ -136,7 +136,7 @@
 
         <div class="row justify-content-md-center">
             <div class="col-md-10 col-lg-8">
-                <video id="v0" width="100%" preload="metadata" playsinline muted controls loop autoplay>
+                <video id="v0" width="100%" preload="metadata" playsinline muted onclick="setAttribute('controls', 'true');" loop autoplay>
                     <source src="videos/vlp_teaser_comp.mp4" type="video/mp4">
                 </video>
             </div>
@@ -859,7 +859,7 @@ platforms).
         <div class="row justify-content-md-center mt-4">
             <div class="col-md-10 col-lg-8">
                 <h3 id="limitations">Limitations</h3>
-                <p>VLP is several limitations. First, the physics of objects may not be accurately preserved (as illustrated by several of the synthesized video plans above) and objects may suddenly disappear and appear. Furthermore, world knowledge may not be correctly transferred to new tasks. Below, we show a video plan where internet knowledge is inaccurately transferred. </p>
+                <p>VLP has several limitations. First, the physics of objects may not be accurately preserved (as illustrated by several of the synthesized video plans above) and objects may suddenly disappear and appear. Furthermore, world knowledge may not be correctly transferred to new tasks. Below, we show a video plan where internet knowledge is inaccurately transferred. </p>
 
                 <div class="card mb-4 mt-4 text-dark bg-light">
                     <h5 class="card-header">Pick up Octopus Toy</h5>
